@@ -4,6 +4,7 @@ import firebase from "../firebaseConfig";
 import Grid from '@material-ui/core/Grid';
 import '../App.css';
 
+
 class Salon extends React.Component {
   render() {
     return (
