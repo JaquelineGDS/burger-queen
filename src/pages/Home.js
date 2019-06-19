@@ -82,8 +82,6 @@ class Home extends React.Component {
             typeUser: this.state.typeUser
           })
             .then(() => {
-              console.log(3)
-              alert("usuário criado")
               this.props.history.push(`/${this.state.typeUser}`);
             })
             .catch(error => alert(error));
@@ -98,15 +96,15 @@ class Home extends React.Component {
         <Grid spacing={3}>
           <Grid container direction="column" justify="center" alignItems="center"  item xs={12} sm={12}>
             <section>
-              <figure className={"logo"}>
+              <figure className="logo">
                 <img src='/images/logo.png' alt='Burguer Queen' />
               </figure>
-              <h1 className={"text-logo"}>Burguer Queen</h1>
+              <h1 className="text-logo">Burguer Queen</h1>
             </section>
           </Grid>
 
           <Grid container direction="column" justify="center" alignItems="center" item xs={12} sm={12}>
-            <section container className={"container"}>
+            <section className="container">
               <Tabs value={this.state.tabSelected} onChange={this.handleChangeTab} centered>
                 <Tab label="LOGIN" />
                 <Tab label="CADASTRO" />
@@ -114,8 +112,8 @@ class Home extends React.Component {
             </section>
             <section>
               {this.state.tabSelected === 0 &&
-                <TabContainer className={"root"}>
-                  <form className={"root"}>
+                <TabContainer className="contaier">
+                  <form className="root">
                     <Input
                       label="Nome"
                       type="text"
@@ -129,8 +127,8 @@ class Home extends React.Component {
                 </TabContainer>
               }
               {this.state.tabSelected === 1 &&
-                <TabContainer className={"root"}>
-                  <form className={"root"}>
+                <TabContainer>
+                  <form>
                     <Input
                       label="Nome"
                       type="text"
