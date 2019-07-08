@@ -112,7 +112,7 @@ class Home extends React.Component {
             </section>
             <section>
               {this.state.tabSelected === 0 &&
-                <TabContainer className="contaier">
+                <TabContainer className="container">
                   <form className="root">
                     <Input
                       label="Nome"

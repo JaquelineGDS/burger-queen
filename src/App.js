@@ -6,7 +6,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import Home from './pages/Home';
 import Kitchen from './pages/Kitchen';
 import Salon from './pages/Salon';
-
+import NewRequest from './pages/newRequest';
 const theme = createMuiTheme({
   palette: {
     primary: { main: '#FCB637' }, 
@@ -25,6 +25,7 @@ class App extends React.Component {
             <Route path="/" exact component={Home}/>
             <Route path="/Salon"  component={Salon}/>
             <Route path="/Kitchen"  component={Kitchen}/>
+            <Route path="/NewRequest"  component={NewRequest}/>
           </Router>
     </ThemeProvider>
     );
